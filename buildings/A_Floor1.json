@@ -1,0 +1,198 @@
+{
+    "maze": {
+        "size": { "width": 22, "depth": 10 },
+        "map": [
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 3, 2, 3, 2, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 2, 2, 1, 0, 0, 0, 3, 2, 2, 2, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0]
+        ],
+        "exitLocation1": [],
+        "exitLocation2": [],
+        "exitLocation3": []
+    },
+    "ground": {
+        "size": { "width": 22.0, "height": 0.0625, "depth": 10.0 },
+        "segments": { "width": 1, "height": 1, "depth": 1 },
+        "primaryColor": "0xffffff",
+        "maps": {
+            "color": {
+                "url": "./textures/Wood_Plank_ukpnbcfn_4K_surface_ms/ukpnbcfn_4K_Albedo.jpg"
+            },
+            "ao": {
+                "url": "",
+                "intensity": 1.0
+            },
+            "displacement": {
+                "url": "",
+                "scale": 1.0,
+                "bias": 0.0
+            },
+            "normal": {
+                "url": "",
+                "type": 0,
+                "scale": { "x": 2.0, "y": 2.0 }
+            },
+            "bump": {
+                "url": "",
+                "scale": 1.0
+            },
+            "roughness": {
+                "url": "./textures/Wood_Plank_ukpnbcfn_4K_surface_ms/ukpnbcfn_4K_Roughness.jpg",
+                "rough": 1.0
+            }
+        },
+        "wrapS": 1,
+        "wrapT": 1,
+        "repeat": { "u": 16.0, "v": 16.0 },
+        "magFilter": 1,
+        "minFilter": 5,
+        "secondaryColor": "0x683a22"
+    },
+    "wall": {
+        "segments": { "width": 1, "height": 1 },
+        "primaryColor": "0xffffff",
+        "maps": {
+            "color": {
+                "url": "./textures/Marble_Polished_ufojbixl_4K_surface_ms/ufojbixl_4K_Albedo.jpg"
+            },
+            "ao": {
+                "url": "",
+                "intensity": 1.0
+            },
+            "displacement": {
+                "url": "",
+                "scale": 1.0,
+                "bias": 0.0
+            },
+            "normal": {
+                "url": "",
+                "type": 0,
+                "scale": { "x": 0.5, "y": 0.5 }
+                },
+            "bump": {
+                "url": "",
+                "scale": 1.0
+            },
+            "roughness": {
+                "url": "./textures/Marble_Polished_ufojbixl_4K_surface_ms/ufojbixl_4K_Roughness.jpg",
+                "rough": 1.0
+            }
+        },
+        "wrapS": 1,
+        "wrapT": 0,
+        "repeat": { "u": 2.0, "v": 1.0 },
+        "magFilter": 1,
+        "minFilter": 5,
+        "secondaryColor": "0x683a22"
+    },
+    "player": {
+        "initialPosition": [1, 20.5],
+        "initialDirection": 5.1
+    },
+    "fmElevator": {
+        "elevatorId": "04e2945f-840d-423a-b710-85615c9dec38",
+        "position": {
+            "positionX": 21,
+            "positionY": 1,
+            "direction": "north"
+        },
+        "access": {
+                "positionX": 21,
+                "positionY": 2
+        } 
+    },
+    "fmRooms": [
+        {
+            "roomId": "4ac1ab17-e390-41a1-a732-9298a2e86c57",
+            "startX": 0,
+            "startY": 0,
+            "endX": 4,
+            "endY": 4,
+            "door": {
+                "position": {
+                    "positionX": 10,
+                    "positionY": 6,
+                    "direction": "west"
+                }
+            },"access": {
+                "positionX": 11,
+                "positionY": 6
+            }, 
+            "roomName": {
+                "lable":"room 1",
+                "position": {
+                    "positionX": 10,
+                    "positionY": 6
+                }
+            }
+        },
+        {
+            "roomId": "bc720988-2770-4de6-9694-fe2dc85f76d0",
+            "startX": 10,
+            "startY": 0,
+            "endX": 14,
+            "endY": 2,
+            "access": {
+                "positionX": 12,
+                "positionY": 3
+            }, 
+            "name": "room 2"
+        },
+        {
+            "roomId": "0f667b11-b738-4d64-a250-32379c453df1",
+            "startX": 14,
+            "startY": 0,
+            "endX": 18,
+            "endY": 2,
+            "access": {
+                "positionX": 16,
+                "positionY": 3
+            }, 
+            "name": "room 3"
+        },
+        {
+            "roomId": "e5c0788c-bc8f-4676-9fb3-28ceb35f52fb",
+            "startX": 18,
+            "startY": 0,
+            "endX": 20,
+            "endY": 2,
+            "access": {
+                "positionX": 19,
+                "positionY": 3
+            }, 
+            "name": "room 4"
+        },
+        {
+            "roomId": "63b06545-8939-4dde-bb49-680a10f4682d",
+            "startX": 10,
+            "startY": 8,
+            "endX": 14,
+            "endY": 10,
+            "access": {
+                "positionX": 12,
+                "positionY": 7
+            }, 
+            "name": "room 5"
+        },
+        {
+            "roomId": "ef85ef07-6814-4ef8-b314-0eba622db86c",
+            "startX": 18,
+            "startY": 8,
+            "endX": 22,
+            "endY": 10,
+            "access": {
+                "positionX": 20,
+                "positionY": 7
+            }, 
+            "name": "room 6"
+        }
+    ]
+}

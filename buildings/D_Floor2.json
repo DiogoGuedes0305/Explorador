@@ -1,0 +1,243 @@
+{
+    "maze": {
+        "size": { "width": 12, "depth": 20 },
+        "map": [
+            [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [3, 2, 2, 2, 1, 0, 3, 2, 2, 2, 2, 2, 1],
+            [1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+            [3, 2, 2, 2, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+            [3, 2, 2, 2, 1, 0, 2, 3, 2, 2, 2, 2, 1],
+            [1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 3, 0, 2, 2, 2, 2, 2, 2, 1],
+            [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0]
+        ],
+        "exitLocation1": [1, 11],
+        "exitLocation2": [],
+        "exitLocation3": []
+    },
+    "ground": {
+        "size": { "width": 12.0, "height": 0.0625, "depth": 20.0 },
+        "segments": { "width": 1, "height": 1, "depth": 1 },
+        "primaryColor": "0xffffff",
+        "maps": {
+            "color": {
+                "url": "./textures/Wood_Plank_ukpnbcfn_4K_surface_ms/ukpnbcfn_4K_Albedo.jpg"
+            },
+            "ao": {
+                "url": "",
+                "intensity": 1.0
+            },
+            "displacement": {
+                "url": "",
+                "scale": 1.0,
+                "bias": 0.0
+            },
+            "normal": {
+                "url": "",
+                "type": 0,
+                "scale": { "x": 2.0, "y": 2.0 }
+            },
+            "bump": {
+                "url": "",
+                "scale": 1.0
+            },
+            "roughness": {
+                "url": "./textures/Wood_Plank_ukpnbcfn_4K_surface_ms/ukpnbcfn_4K_Roughness.jpg",
+                "rough": 1.0
+            }
+        },
+        "wrapS": 1,
+        "wrapT": 1,
+        "repeat": { "u": 16.0, "v": 16.0 },
+        "magFilter": 1,
+        "minFilter": 5,
+        "secondaryColor": "0x683a22"
+    },
+    "wall": {
+        "segments": { "width": 1, "height": 1 },
+        "primaryColor": "0xffffff",
+        "maps": {
+            "color": {
+                "url": "./textures/Marble_Polished_ufojbixl_4K_surface_ms/ufojbixl_4K_Albedo.jpg"
+            },
+            "ao": {
+                "url": "",
+                "intensity": 1.0
+            },
+            "displacement": {
+                "url": "",
+                "scale": 1.0,
+                "bias": 0.0
+            },
+            "normal": {
+                "url": "",
+                "type": 0,
+                "scale": { "x": 0.5, "y": 0.5 }
+                },
+            "bump": {
+                "url": "",
+                "scale": 1.0
+            },
+            "roughness": {
+                "url": "./textures/Marble_Polished_ufojbixl_4K_surface_ms/ufojbixl_4K_Roughness.jpg",
+                "rough": 1.0
+            }
+        },
+        "wrapS": 1,
+        "wrapT": 0,
+        "repeat": { "u": 2.0, "v": 1.0 },
+        "magFilter": 1,
+        "minFilter": 5,
+        "secondaryColor": "0x683a22"
+    },
+    "fmRooms": [
+        {
+            "roomId": "2e032467-525b-4ba1-add2-466a5f1f7e7b",
+            "startX": 0,
+            "startY": 0,
+            "endX": 4,
+            "endY": 2,
+            "door": {
+                "position": {
+                    "positionX": 4,
+                    "positionY": 4,
+                    "direction": "west"
+                }
+            },
+            "access": {
+                "positionX": 5,
+                "positionY": 4
+            }
+        },
+        {
+            "roomId": "a9703c00-8039-4852-bb8d-d3082e5a13b0",
+            "startX": 6,
+            "startY": 2,
+            "endX": 0,
+            "endY": 0,
+            "door": {
+                "position": {
+                    "positionX": 4,
+                    "positionY": 9,
+                    "direction": "west"
+                }
+            },
+            "access": {
+                "positionX": 5,
+                "positionY": 9
+            }
+        },
+        {
+            "roomId": "8776d133-1ea6-4b18-83c7-a43e9d8bb783",
+            "startX": 6,
+            "startY": 2,
+            "endX": 0,
+            "endY": 0,
+            "door": {
+                "position": {
+                    "positionX": 6,
+                    "positionY": 9,
+                    "direction": "west"
+                }
+            },
+            "access": {
+                "positionX": 5,
+                "positionY": 9
+            }
+        },
+        {
+            "roomId": "9f17064c-7afa-4a1b-83a6-b567f4072865",
+            "startX": 6,
+            "startY": 2,
+            "endX": 0,
+            "endY": 0,
+            "door": {
+                "position": {
+                    "positionX": 4,
+                    "positionY": 14,
+                    "direction": "west"
+                }
+            },
+            "access": {
+                "positionX": 5,
+                "positionY": 14
+            }
+        },
+        {
+            "roomId": "0d3bd85e-c15d-48c6-99b0-9971a64d0be7",
+            "startX": 6,
+            "startY": 2,
+            "endX": 0,
+            "endY": 0,
+            "door": {
+                "position": {
+                    "positionX": 7,
+                    "positionY": 14,
+                    "direction": "west"
+                }
+            },
+            "access": {
+                "positionX": 6,
+                "positionY": 14
+            }
+        },
+        {
+            "roomId": "c49c7de1-5786-471d-83c7-e1612cc1f976",
+            "startX": 6,
+            "startY": 2,
+            "endX": 0,
+            "endY": 0,
+            "door": {
+                "position": {
+                    "positionX": 5,
+                    "positionY": 16,
+                    "direction": "north"
+                }
+            },
+            "access": {
+                "positionX": 5,
+                "positionY": 15
+            }
+        }
+    ],
+    "fmElevator": {
+        "elevatorId": "51deaa55-4ee0-4122-94cb-1cecf9c690eb",
+        "position": {
+            "positionX": 1,
+            "positionY": 1,
+            "direction": "east"
+        },
+        "access": {
+            "positionX": 2,
+            "positionY": 1
+        }
+    },
+    "player": {
+        "initialPosition": [1, 1],
+        "initialDirection": 90.0
+    },
+    "fmPassages": [
+        {
+            "passage": {
+                "position": {
+                    "positionX": 12,
+                    "positionY": 1,
+                    "direction": "east"
+                }
+            }
+        }
+    ]
+}
