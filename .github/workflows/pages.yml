@@ -1,0 +1,39 @@
+name: Publicar o jogo (GitHub Pages)
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      # Só o que o jogo usa: as cópias do three.js (three.js-master, node_modules) e a pasta public
+      # não são carregadas pela página (o three vem do CDN, ver o importmap do Index.html).
+      - name: Juntar os ficheiros do jogo
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude 'three.js-master' \
+            --exclude 'node_modules' --exclude 'public' --exclude 'package*.json' ./ _site/
+          cp _site/Index.html _site/index.html
+          touch _site/.nojekyll
+          du -sh _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
