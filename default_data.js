@@ -50,7 +50,7 @@ export const playerData = {
     credits: "Model and related code snippets created by <a href='https://www.patreon.com/quaternius' target='_blank' rel='noopener'>Tomás Laulhé</a>. CC0 1.0. Modified by <a href='https://donmccurdy.com/' target='_blank' rel='noopener'>Don McCurdy</a>.",
     scale: new THREE.Vector3(0.1, 0.1, 0.1),
     helpersColor: new THREE.Color(0xffffff),
-    walkingSpeed: 5.75,
+    walkingSpeed: 2.0,
     defaultDirection: 0.0, // Expressed in degrees
     turningSpeed: 175.0, // Expressed in degrees / second
     runningFactor: 2.0, // Affects walking speed and turning speed
