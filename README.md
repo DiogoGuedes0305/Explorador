@@ -1,46 +1,51 @@
+🇬🇧 **English** · 🇵🇹 [Português](README.pt.md)
+
 # Explorador
 
-Jogo 3D no browser (Three.js). Controlas uma personagem que anda pelos pisos de quatro edifícios (A, B, C e D) e muda
-de piso pelos elevadores e de edifício pelas passagens (os portais).
+A 3D game in the browser (Three.js). You control a character walking through the floors of four buildings (A, B, C and D),
+changing floors by elevator and buildings through passages (the portals).
 
-## ▶️ Jogar
+<p align="center"><img src="docs/demo.gif" alt="Animated demo: buildings, the robot walking, animations and portals" width="720"></p>
+<p align="center"><sub>🎬 Animated demo</sub></p>
+
+## ▶️ Play
 
 **https://diogoguedes0305.github.io/Explorador/**
 
-Não é preciso instalar nada: abre no Chrome, Edge ou Firefox de um computador (precisa de teclado).
-A primeira vez demora uns segundos a carregar (texturas e modelos 3D).
+Nothing to install: open it in Chrome, Edge or Firefox on a computer (you need a keyboard).
+The first time it takes a few seconds to load (textures and 3D models).
 
-## Teclas
+## Keys
 
-| Tecla | Ação |
+| Key | Action |
 |---|---|
-| ↑ ↓ ← → | Andar e virar |
-| J | Saltar |
-| W / P / T / Y / N | Acenar / dar um soco / polegar para cima / dizer sim / dizer não |
-| 1 / 2 / 3 / 4 | Vista fixa / primeira pessoa / terceira pessoa / vista de cima |
-| R | Vista realista |
-| M | Mini-mapa |
-| H | Ajuda |
-| U | Mostrar/esconder o painel de opções |
-| A / D / S / F | Ligar/desligar as luzes (ambiente, direcional, foco, lanterna) |
-| X / G | Sombras / nevoeiro |
-| Z | Estatísticas (fps) |
-| B | Volumes de colisão |
+| ↑ ↓ ← → | Walk and turn |
+| J | Jump |
+| W / P / T / Y / N | Wave / punch / thumbs up / say yes / say no |
+| 1 / 2 / 3 / 4 | Fixed view / first person / third person / top view |
+| R | Realistic view |
+| M | Mini-map |
+| H | Help |
+| U | Show/hide the options panel |
+| A / D / S / F | Toggle lights (ambient, directional, spotlight, flashlight) |
+| X / G | Shadows / fog |
+| Z | Statistics (fps) |
+| B | Collision volumes |
 
-No painel de opções pode escolher-se o edifício e o piso onde começar e o céu (skybox).
+In the options panel you can choose the building and floor to start on, and the sky (skybox).
 
-## Como está feito
+## How it's built
 
-- `Index.html` — a página; carrega o Three.js 0.160 do CDN (jsDelivr) por um *import map*.
-- `thumb_raiser.js` — o motor do jogo (câmaras, teclado, colisões, mudança de piso).
-- `maze.js`, `wall.js`, `ground.js`, `door.js`, `elevator.js`, `passage.js` — a construção de cada piso a partir de
+- `Index.html` — the page; loads Three.js 0.160 from a CDN (jsDelivr) through an *import map*.
+- `thumb_raiser.js` — the game engine (cameras, keyboard, collisions, changing floors).
+- `maze.js`, `wall.js`, `ground.js`, `door.js`, `elevator.js`, `passage.js` — building each floor from
   `buildings/*.json`.
-- `player.js`, `animations.js` — a personagem e as animações (`models/`).
-- `lights.js`, `fog.js`, `cubetexture.js`, `audio.js`, `user_interface.js` — luzes, nevoeiro, céu, sons e painel.
+- `player.js`, `animations.js` — the character and its animations (`models/`).
+- `lights.js`, `fog.js`, `cubetexture.js`, `audio.js`, `user_interface.js` — lights, fog, sky, sounds and panel.
 
-Para correr no próprio computador basta um servidor estático na pasta (por exemplo `npx serve .`) e abrir `Index.html`.
-As pastas `three.js-master/`, `node_modules/` e `public/` não são usadas pela página e não vão para o site.
+To run it on your own computer, serve the folder with any static server (for example `npx serve .`) and open `Index.html`.
+The `three.js-master/`, `node_modules/` and `public/` folders aren't used by the page and aren't published.
 
-Publicado automaticamente pelo GitHub Pages (`.github/workflows/pages.yml`) a cada alteração no ramo `master`.
+Published automatically by GitHub Pages (`.github/workflows/pages.yml`) on every change to the `master` branch.
 
-Créditos dos sons, céus e texturas: ver o painel do jogo (Dreamstime, Fesliyan Studios, Pixabay, OpenGameArt, TextureCan).
+Credits for sounds, skies and textures: see the in-game panel (Dreamstime, Fesliyan Studios, Pixabay, OpenGameArt, TextureCan).
