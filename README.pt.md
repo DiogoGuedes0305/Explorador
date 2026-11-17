@@ -1,4 +1,8 @@
-🇬🇧 [English](README.md) · 🇵🇹 **Português**
+<p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/%F0%9F%87%AC%F0%9F%87%A7_Read_in-English-C8102E?style=for-the-badge&labelColor=012169" alt="Read in English" height="34"></a>
+  &nbsp;
+  <a href="README.pt.md"><img src="https://img.shields.io/badge/%F0%9F%87%B5%F0%9F%87%B9_Portugu%C3%AAs-%E2%9C%93-3b434d?style=for-the-badge&labelColor=1f2328" alt="Português (atual)" height="34"></a>
+</p>
 
 # Explorador
 
